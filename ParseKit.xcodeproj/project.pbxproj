@@ -4535,6 +4535,7 @@
 				LLVM_LTO = NO;
 				PRODUCT_NAME = ParseKit;
 				SKIP_INSTALL = YES;
+				SYMROOT = "$(SRCROOT)/build";
 				WRAPPER_EXTENSION = framework;
 				ZERO_LINK = YES;
 			};
@@ -4560,6 +4561,7 @@
 				LLVM_LTO = NO;
 				PRODUCT_NAME = ParseKit;
 				SKIP_INSTALL = YES;
+				SYMROOT = "$(SRCROOT)/build";
 				TDPARSEKIT_FRAMEWORK_TARGET_PATH = "@executable_path/../Frameworks";
 				WRAPPER_EXTENSION = framework;
 			};
