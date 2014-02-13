@@ -6,7 +6,23 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		A638D2F718AD1C830008635E /* ParseKit-iOS */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = A638D2F818AD1C830008635E /* Build configuration list for PBXAggregateTarget "ParseKit-iOS" */;
+			buildPhases = (
+				A638D2FB18AD1CD10008635E /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = "ParseKit-iOS";
+			productName = "ParseKit-iOS";
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
+		A638D2EB18AD17FA0008635E /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A638D2EA18AD17FA0008635E /* libicucore.dylib */; };
+		A638D2ED18AD17FF0008635E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A638D2EC18AD17FF0008635E /* Foundation.framework */; };
 		D302C69D0EF044810090E714 /* TDPlistParser.m in Sources */ = {isa = PBXBuildFile; fileRef = D36568A60EEF9FE900226554 /* TDPlistParser.m */; };
 		D30805BA155ECB1F0000BC60 /* PKPattern.m in Sources */ = {isa = PBXBuildFile; fileRef = D34BAF380FF9E18300D7773A /* PKPattern.m */; };
 		D30805BB155ECB220000BC60 /* RegexKitLite.m in Sources */ = {isa = PBXBuildFile; fileRef = D36C55FD0FD3617B00141CB7 /* RegexKitLite.m */; };
@@ -45,8 +61,6 @@
 		D30DA1A117284EFF00A1A3EC /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D30DA1A017284EFF00A1A3EC /* Cocoa.framework */; };
 		D30DA1A417284F9900A1A3EC /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D36C560B0FD363D500141CB7 /* libicucore.dylib */; };
 		D30DA1A517284FD800A1A3EC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D30DA19E17284EC100A1A3EC /* Foundation.framework */; };
-		D30DA1A8172850A400A1A3EC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D30DA1A7172850A400A1A3EC /* Foundation.framework */; };
-		D30DA1AA172850BB00A1A3EC /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D30DA1A9172850BB00A1A3EC /* libicucore.dylib */; };
 		D30DA1AB172850EC00A1A3EC /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D30DA1A017284EFF00A1A3EC /* Cocoa.framework */; };
 		D30DA1AC172850F500A1A3EC /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D30DA1A017284EFF00A1A3EC /* Cocoa.framework */; };
 		D30DA1AE1728510100A1A3EC /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D30DA1A017284EFF00A1A3EC /* Cocoa.framework */; };
@@ -837,7 +851,6 @@
 		D3D9759C16E7F53900D55EAB /* PKSymbolNode.m in Sources */ = {isa = PBXBuildFile; fileRef = D34BAF240FF9DF9900D7773A /* PKSymbolNode.m */; };
 		D3D9759D16E7F53900D55EAB /* PKWord.m in Sources */ = {isa = PBXBuildFile; fileRef = D34BAED40FF9D56400D7773A /* PKWord.m */; };
 		D3D9759E16E7F53900D55EAB /* PKAny.m in Sources */ = {isa = PBXBuildFile; fileRef = D34BAE2F0FF9CE6000D7773A /* PKAny.m */; };
-		D3D9759F16E7F55F00D55EAB /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D36C560B0FD363D500141CB7 /* libicucore.dylib */; };
 		D3D975B016E803A400D55EAB /* PKCaseInsensitiveLiteral.m in Sources */ = {isa = PBXBuildFile; fileRef = D34BAF3C0FF9E19700D7773A /* PKCaseInsensitiveLiteral.m */; };
 		D3D975B216E803A700D55EAB /* PKWhitespace.m in Sources */ = {isa = PBXBuildFile; fileRef = D34BAF4A0FF9E19700D7773A /* PKWhitespace.m */; };
 		D3D975B316E803AB00D55EAB /* PKComment.m in Sources */ = {isa = PBXBuildFile; fileRef = D34BAF3E0FF9E19700D7773A /* PKComment.m */; };
@@ -1009,6 +1022,8 @@
 
 /* Begin PBXFileReference section */
 		8DC2EF5B0486A6940098B216 /* ParseKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ParseKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A638D2EA18AD17FA0008635E /* libicucore.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicucore.dylib; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/usr/lib/libicucore.dylib; sourceTree = DEVELOPER_DIR; };
+		A638D2EC18AD17FF0008635E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		D30226F8170202DD00594F16 /* PKSParserGenVisitor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PKSParserGenVisitor.h; path = src/PKSParserGenVisitor.h; sourceTree = "<group>"; };
 		D30226F9170202DD00594F16 /* PKSParserGenVisitor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PKSParserGenVisitor.m; path = src/PKSParserGenVisitor.m; sourceTree = "<group>"; };
 		D3022705170208C800594F16 /* DeepMutableCopy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DeepMutableCopy.h; path = lib/MGTemplateEngine/DeepMutableCopy.h; sourceTree = "<group>"; };
@@ -1077,8 +1092,6 @@
 		D30DA19A17274BF100A1A3EC /* PKSTryAndRecoverEOFTemplate.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = PKSTryAndRecoverEOFTemplate.txt; path = res/PKSTryAndRecoverEOFTemplate.txt; sourceTree = "<group>"; };
 		D30DA19E17284EC100A1A3EC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D30DA1A017284EFF00A1A3EC /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
-		D30DA1A7172850A400A1A3EC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		D30DA1A9172850BB00A1A3EC /* libicucore.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicucore.dylib; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/usr/lib/libicucore.dylib; sourceTree = DEVELOPER_DIR; };
 		D3126D040FFD9BA700CBF4C4 /* PKNegation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PKNegation.m; path = src/PKNegation.m; sourceTree = "<group>"; };
 		D3126D090FFD9E4B00CBF4C4 /* TDNegationTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TDNegationTest.h; path = test/TDNegationTest.h; sourceTree = "<group>"; };
 		D3126D0A0FFD9E4B00CBF4C4 /* TDNegationTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TDNegationTest.m; path = test/TDNegationTest.m; sourceTree = "<group>"; };
@@ -1821,7 +1834,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D3D9759F16E7F55F00D55EAB /* libicucore.dylib in Frameworks */,
 				D30DA1A517284FD800A1A3EC /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1830,8 +1842,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D30DA1AA172850BB00A1A3EC /* libicucore.dylib in Frameworks */,
-				D30DA1A8172850A400A1A3EC /* Foundation.framework in Frameworks */,
+				A638D2ED18AD17FF0008635E /* Foundation.framework in Frameworks */,
+				A638D2EB18AD17FA0008635E /* libicucore.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3204,8 +3216,8 @@
 		D3FDC8EF0FFC52CD00F1F797 /* Mobile */ = {
 			isa = PBXGroup;
 			children = (
-				D30DA1A9172850BB00A1A3EC /* libicucore.dylib */,
-				D30DA1A7172850A400A1A3EC /* Foundation.framework */,
+				A638D2EC18AD17FF0008635E /* Foundation.framework */,
+				A638D2EA18AD17FA0008635E /* libicucore.dylib */,
 			);
 			name = Mobile;
 			sourceTree = "<group>";
@@ -3623,7 +3635,7 @@
 		0867D690FE84028FC02AAC07 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0460;
+				LastUpgradeCheck = 0500;
 			};
 			buildConfigurationList = 1DEB91B108733DA50010E9CD /* Build configuration list for PBXProject "ParseKit" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -3642,6 +3654,7 @@
 			projectRoot = "";
 			targets = (
 				8DC2EF4F0486A6940098B216 /* ParseKit */,
+				A638D2F718AD1C830008635E /* ParseKit-iOS */,
 				D3D9753116E7F36700D55EAB /* libParseKit */,
 				D3FDC5820FFC4BFC00F1F797 /* libParseKitMobile */,
 				D37D8DC51571A4F700CDB822 /* ParseKitTests */,
@@ -3874,6 +3887,19 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		A638D2FB18AD1CD10008635E /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# define output folder environment variable\nUNIVERSAL_OUTPUTFOLDER=${SRCROOT}/${CONFIGURATION}-iphoneuniversal\n\n# Step 1. Build Device and Simulator versions\nxcodebuild -target libParseKitMobile ONLY_ACTIVE_ARCH=NO -configuration ${CONFIGURATION} -sdk iphoneos  BUILD_DIR=\"${BUILD_DIR}\" BUILD_ROOT=\"${BUILD_ROOT}\"\nxcodebuild -target libParseKitMobile -configuration ${CONFIGURATION} -sdk iphonesimulator -arch i386 BUILD_DIR=\"${BUILD_DIR}\" BUILD_ROOT=\"${BUILD_ROOT}\"\n\n# make sure the output directory exists\nmkdir -p \"${UNIVERSAL_OUTPUTFOLDER}\"\n\n# Step 2. Create universal binary file using lipo\nlipo -create -output \"${UNIVERSAL_OUTPUTFOLDER}/lib${PRODUCT_NAME}.a\" \"${BUILD_DIR}/${CONFIGURATION}-iphoneos/libParseKitMobile.a\" \"${BUILD_DIR}/${CONFIGURATION}-iphonesimulator/libParseKitMobile.a\"\n\n# Last touch. copy the header files. Just for convenience\ncp -R \"${BUILD_DIR}/${CONFIGURATION}-iphoneos/include\" \"${UNIVERSAL_OUTPUTFOLDER}/\"";
+		};
 		D36C65E7100ED81B000361A0 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -4520,6 +4546,7 @@
 		1DEB91AE08733DA50010E9CD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -4543,6 +4570,7 @@
 		1DEB91AF08733DA50010E9CD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "$(TDPARSEKIT_FRAMEWORK_TARGET_PATH)";
@@ -4568,11 +4596,10 @@
 		1DEB91B208733DA50010E9CD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
@@ -4582,13 +4609,34 @@
 		1DEB91B308733DA50010E9CD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		A638D2F918AD1C830008635E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "include/$(PRODUCT_NAME)";
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+			};
+			name = Debug;
+		};
+		A638D2FA18AD1C830008635E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "include/$(PRODUCT_NAME)";
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
 			};
 			name = Release;
 		};
@@ -4843,7 +4891,9 @@
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = ParseKit;
+				PUBLIC_HEADERS_FOLDER_PATH = "include/$(PRODUCT_NAME)";
 			};
 			name = Debug;
 		};
@@ -4863,7 +4913,9 @@
 				GCC_PREFIX_HEADER = src/ParseKit_Prefix.pch;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = ParseKit;
+				PUBLIC_HEADERS_FOLDER_PATH = "include/$(PRODUCT_NAME)";
 			};
 			name = Release;
 		};
@@ -4871,7 +4923,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -4879,7 +4931,9 @@
 				GCC_PREFIX_HEADER = src/ParseKitMobile_Prefix.pch;
 				HEADER_SEARCH_PATHS = "";
 				PRODUCT_NAME = ParseKitMobile;
+				PUBLIC_HEADERS_FOLDER_PATH = "include/$(PRODUCT_NAME)";
 				SDKROOT = iphoneos;
+				SYMROOT = build;
 			};
 			name = Debug;
 		};
@@ -4887,7 +4941,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				COPY_PHASE_STRIP = YES;
 				EXECUTABLE_PREFIX = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -4895,7 +4949,9 @@
 				HEADER_SEARCH_PATHS = "";
 				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = ParseKitMobile;
+				PUBLIC_HEADERS_FOLDER_PATH = "include/$(PRODUCT_NAME)";
 				SDKROOT = iphoneos;
+				SYMROOT = build;
 				ZERO_LINK = NO;
 			};
 			name = Release;
@@ -4917,6 +4973,15 @@
 			buildConfigurations = (
 				1DEB91B208733DA50010E9CD /* Debug */,
 				1DEB91B308733DA50010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		A638D2F818AD1C830008635E /* Build configuration list for PBXAggregateTarget "ParseKit-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A638D2F918AD1C830008635E /* Debug */,
+				A638D2FA18AD1C830008635E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
