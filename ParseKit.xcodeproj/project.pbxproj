@@ -21,8 +21,8 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		A638D2EB18AD17FA0008635E /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A638D2EA18AD17FA0008635E /* libicucore.dylib */; };
-		A638D2ED18AD17FF0008635E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A638D2EC18AD17FF0008635E /* Foundation.framework */; };
+		A634A05C18D870C000DEFA51 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A634A05B18D870C000DEFA51 /* Foundation.framework */; };
+		A634A05E18D870C600DEFA51 /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A634A05D18D870C600DEFA51 /* libicucore.dylib */; };
 		D302C69D0EF044810090E714 /* TDPlistParser.m in Sources */ = {isa = PBXBuildFile; fileRef = D36568A60EEF9FE900226554 /* TDPlistParser.m */; };
 		D30805BA155ECB1F0000BC60 /* PKPattern.m in Sources */ = {isa = PBXBuildFile; fileRef = D34BAF380FF9E18300D7773A /* PKPattern.m */; };
 		D30805BB155ECB220000BC60 /* RegexKitLite.m in Sources */ = {isa = PBXBuildFile; fileRef = D36C55FD0FD3617B00141CB7 /* RegexKitLite.m */; };
@@ -1022,6 +1022,8 @@
 
 /* Begin PBXFileReference section */
 		8DC2EF5B0486A6940098B216 /* ParseKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ParseKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A634A05B18D870C000DEFA51 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		A634A05D18D870C600DEFA51 /* libicucore.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicucore.dylib; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/usr/lib/libicucore.dylib; sourceTree = DEVELOPER_DIR; };
 		A638D2EA18AD17FA0008635E /* libicucore.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicucore.dylib; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/usr/lib/libicucore.dylib; sourceTree = DEVELOPER_DIR; };
 		A638D2EC18AD17FF0008635E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		D30226F8170202DD00594F16 /* PKSParserGenVisitor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PKSParserGenVisitor.h; path = src/PKSParserGenVisitor.h; sourceTree = "<group>"; };
@@ -1842,8 +1844,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A638D2ED18AD17FF0008635E /* Foundation.framework in Frameworks */,
-				A638D2EB18AD17FA0008635E /* libicucore.dylib in Frameworks */,
+				A634A05E18D870C600DEFA51 /* libicucore.dylib in Frameworks */,
+				A634A05C18D870C000DEFA51 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1867,6 +1869,8 @@
 		0867D691FE84028FC02AAC07 /* TODParseKit */ = {
 			isa = PBXGroup;
 			children = (
+				A634A05D18D870C600DEFA51 /* libicucore.dylib */,
+				A634A05B18D870C000DEFA51 /* Foundation.framework */,
 				08FB77AEFE84172EC02AAC07 /* ParseKit */,
 				D3C7D8220A411F31005DD154 /* ParseKit Tests */,
 				D36E98CB0E58C08F00496BD3 /* DebugApp */,
