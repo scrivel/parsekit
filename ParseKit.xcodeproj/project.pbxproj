@@ -22,7 +22,6 @@
 
 /* Begin PBXBuildFile section */
 		A634A05C18D870C000DEFA51 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A634A05B18D870C000DEFA51 /* Foundation.framework */; };
-		A634A05E18D870C600DEFA51 /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A634A05D18D870C600DEFA51 /* libicucore.dylib */; };
 		D302C69D0EF044810090E714 /* TDPlistParser.m in Sources */ = {isa = PBXBuildFile; fileRef = D36568A60EEF9FE900226554 /* TDPlistParser.m */; };
 		D30805BA155ECB1F0000BC60 /* PKPattern.m in Sources */ = {isa = PBXBuildFile; fileRef = D34BAF380FF9E18300D7773A /* PKPattern.m */; };
 		D30805BB155ECB220000BC60 /* RegexKitLite.m in Sources */ = {isa = PBXBuildFile; fileRef = D36C55FD0FD3617B00141CB7 /* RegexKitLite.m */; };
@@ -1844,7 +1843,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A634A05E18D870C600DEFA51 /* libicucore.dylib in Frameworks */,
 				A634A05C18D870C000DEFA51 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -4934,6 +4932,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = src/ParseKitMobile_Prefix.pch;
 				HEADER_SEARCH_PATHS = "";
+				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = ParseKitMobile;
 				PUBLIC_HEADERS_FOLDER_PATH = "include/$(PRODUCT_NAME)";
 				SDKROOT = iphoneos;
